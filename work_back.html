@@ -1,0 +1,40 @@
+<!--
+- <head> element has 3 child nodes:
+  - an empty text node
+  - a <title> tag containing the text "Title"
+  - an empty text node
+- <body> element has 5 child nodes, 2 of which are text
+  - the first child element is <header>
+    - this contains the text "Header"
+  - one element node has a child element <div>; this is the only <div>
+    found in the document
+    - this <div> has a <section> child
+      - this <section> has 3 child elements, a <h1> and two <p>s
+      - these child elements probably contain the following text,
+        respectively: "H1", "Hello", and "World"
+- somewhere there's a <footer> that has 1 child element
+  - the child element is a <span> with the class "emphasis"
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Title
+    </title>
+  </head>
+  <body>
+    <header>Header</header><main>
+      <div>
+        <section>
+          <h1>H1</h1>
+          <p>Hello</p>
+          <p>World</p>
+        </section>
+      </div>
+    </main><footer>
+      <span class="emphasis"></span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  background: #FFF9CA;
+  margin: 0 0 0 50px;
+  font-size: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+.question {
+  margin-top: 1em;
+}
+
+.result {
+  box-sizing: border-box;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.correct {
+  border: 1px solid green;
+  padding: 5px;
+}
+
+.incorrect {
+  border: 1px solid red;
+  padding: 5px;
+}
+
+.unanswered {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+#submit {
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  background: #C188FF;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#reset {
+  margin: 0 0 20px 0;
+  padding: 10px;
+  background: #C188FF;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#submit:disabled, #reset:disabled {
+  background: lightgrey;
+}

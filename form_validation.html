@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="whitespace_reset.css">
+    <link rel="stylesheet" href="form_validation.css">
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+    <form action="" method="post" novalidate>
+      <p id="form-errors"></p>
+      <fieldset>
+        <dl>
+          <dt><label for="first-name">First Name</label></dt>
+          <dd>
+            <input name="first-name" id="first-name" type="text" required>
+            <span class="error"></span>
+          </dd>
+          <dt><label for="last-name">Last Name</label></dt>
+          <dd>
+            <input name="last-name" id="last-name" type="text" required>
+            <span class="error"></span>
+          </dd>
+          <dt><label for="email">Email</label></dt>
+          <dd>
+            <input name="email" id="email" type="text" pattern=".+@.+" placeholder="someone@example.com" required>
+            <span class="error"></span>
+          </dd>
+          <dt><label for="password">Password</label></dt>
+          <dd>
+            <input name="password" id="password" type="password" minlength="10" required>
+            <span class="error"></span>
+          </dd>
+          <dt><label for="phone-number">Phone Number</label></dt>
+          <dd>
+            <input name="phone-number" id="phone-number" type="text" placeholder="111-222-3333" pattern="\d{3}-\d{3}-\d{4}">
+            <span class="error"></span>
+          </dd>
+          <dt><label for="credit-card">Credit Card Number</label></dt>
+          <dd id="credit-card-entry">
+            <span><input id="cc1" name="credit-card" type="text" maxlength="4" placeholder="XXXX"></span> -
+            <span><input id="cc2" name="credit-card" type="text" maxlength="4" placeholder="XXXX"></span> -
+            <span><input id="cc3" name="credit-card" type="text" maxlength="4" placeholder="XXXX"></span> -
+            <span><input id="cc4" name="credit-card" type="text" maxlength="4" placeholder="XXXX"></span>
+          </dd>
+          <button type="submit">Sign Up</button>
+        </dl>
+      </fieldset>
+    </form>
+    <div id="serialized-form">
+      <h2>Serialized Form Data</h2>
+      <p></p>
+    </div>
+    <script src="form_validation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  background-color: darkslateblue;
+  color: white;
+}
+
+h1 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+figure {
+  width: 22%;
+  margin: 0 0 20px 2%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  position: relative;
+}
